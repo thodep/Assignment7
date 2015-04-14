@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UITextFieldDelegate>
+@property (weak, nonatomic) IBOutlet UITextField *textFiendFirstName;
+@property (weak, nonatomic) IBOutlet UITextField *textFieldLastName;
 
+@property (strong, nonatomic) IBOutlet UITextField *textField;
 
 @end
 
